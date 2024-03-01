@@ -1,0 +1,40 @@
+
+.dropdown {
+  position: relative;
+  width: 200px;
+}
+.dropdown-link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  background-color: gold;
+}
+
+/* Dropdown menyu dropdown hower holatida ochilishi uchun kiritildi */
+.dropdow-menu {
+  position: absolute;
+  /* Dropdown hover va hover bo'lmagan holatlarda sakrash yuzaga kelmasligi uchun position: absolute; kiritiladi */
+  display: none;
+  /* Dropdovn hoher bo'lmagan holatda dropdown menyu displeyi block bo'lib turadi */
+  width: 100%;
+  /* Dropdown elementlari dropdownni enini to'liq egallash uchun uning eni 100% beriladi */
+}
+
+
+/* Hover holatida  dropdow-menu ochilishi uchun quyidagi ketmaketlik yoziladi*/
+.dropdown:hover .dropdow-menu {
+  display: block;
+}
+
+
+/* dropdow-menu ichidagi har bir link stili */
+.dropdown-menu-link {
+  display: block;
+  text-decoration: none;
+  background-color: dodgerblue;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #000;
+  color: #fff;
+}
